@@ -7,6 +7,9 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.example.server.annamal;
+import com.example.dao.dog;
+
 /**
  * Hello world!
  *
@@ -17,6 +20,11 @@ public class App {
     static HashMap<String, Integer> map = new HashMap<String, Integer>();
 
     public static void main(String[] args) {
+
+        annamal dog=new dog();
+        dog.method1();
+        dog.method2();
+
         System.out.println("Hello World!\r\n");
         Logger logger = LogManager.getLogger(App.class);
         logger.info("Hello ---World!");
